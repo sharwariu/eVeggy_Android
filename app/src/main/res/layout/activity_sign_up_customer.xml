@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:onClick="signup"
+    tools:context=".RegisterCustomerActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="330dp"
+        android:layout_height="138dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/app_logo" />
+
+
+    <EditText
+        android:id="@+id/customer_name"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+      />
+    <EditText
+        android:id="@+id/customer_email"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="EMAIL"
+        android:inputType="text"
+        android:padding="20dp"
+        />
+    <EditText
+        android:id="@+id/customer_input_password"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+       />
+
+
+    <Button
+        android:id="@+id/login_customer"
+        android:layout_width="226dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:background="@drawable/background"
+        android:onClick="signup"
+        android:text="CREATE ACCOUNT"
+        />
+
+
+
+</LinearLayout>

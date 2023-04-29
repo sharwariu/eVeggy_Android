@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#F5F5F5"
+android:orientation="vertical"
+tools:context=".CustomerDashboardActivity">
+
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:id="@+id/appbar"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/relative_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="50dp"
+            android:layout_weight="1"
+            android:drawablePadding="2dp"
+            android:fontFamily="serif"
+            android:text=" Eveggy"
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="15dp"
+            android:drawableStart="@drawable/ic_outline_shopping_cart"
+            android:drawablePadding="10dp"
+            android:fontFamily="serif"
+
+            android:textColor="@android:color/black"
+
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_alignRight="@+id/cart"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+
+            android:drawableStart="@drawable/ic_baseline_logout_24"
+            android:drawablePadding="15dp"
+            android:fontFamily="serif"
+
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+
+
+
+    </LinearLayout>
+
+</com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar"
+        android:layout_marginBottom="60dp" />
+    <Button
+        android:id="@+id/orders"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/white"
+        android:text="My Orders"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:elevation="5dp"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/name"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:text="Name- "
+                android:layout_height="wrap_content"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/order_id"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+
+                android:text="Order Id - "
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/date"
+
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:text="Date - "
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/total"
+                android:layout_marginTop="5dp"
+                android:text="Order Price  - "
+                android:textStyle="bold"
+
+                android:layout_height="wrap_content"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/address"
+                android:layout_marginTop="5dp"
+                android:text="Address - "
+                android:textStyle="bold"
+
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/state"
+                android:layout_marginTop="5dp"
+
+                android:textStyle="bold"
+                android:text="Order State  - "
+                android:layout_height="wrap_content"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/action_button"
+
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/action"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></Spinner>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#4CAF50"
+                    android:padding="5dp"
+                    android:textColor="#fff"
+                    android:id="@+id/accept"
+                    android:textAlignment="center"
+                    android:text="Update"
+                    android:layout_height="wrap_content"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#F44336"
+                    android:id="@+id/reject"
+                    android:layout_marginLeft="20dp"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:textColor="#fff"
+                    android:textAlignment="center"
+                    android:text="Reject"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:background="#000"
+                android:id="@+id/order_details"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:text="Order Details"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
